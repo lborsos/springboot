@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-@Route
+@Route("/")
 public class MainView extends VerticalLayout {
     private final TextField nameField = new TextField("Name");
     private final TextField passwordField = new TextField("Password");
