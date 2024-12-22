@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Laci_Work/Spring_Boot/MyApplication/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Laci_Work/Spring_Boot/MyApplication/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Laci_Work/Spring_Boot/MyApplication/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Laci_Work\\Spring_Boot\\MyApplication\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Laci_Work\\Spring_Boot\\MyApplication\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Laci_Work/Spring_Boot/MyApplication/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Laci_Work/Spring_Boot/MyApplication/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Laci_Work/Spring_Boot/MyApplication/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Laci_Work\\Spring_Boot\\MyApplication\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

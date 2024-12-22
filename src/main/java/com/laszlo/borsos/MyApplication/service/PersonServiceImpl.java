@@ -4,6 +4,8 @@ import com.laszlo.borsos.MyApplication.entity.Person;
 import com.laszlo.borsos.MyApplication.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PersonServiceImpl implements PersonService {
     private final PersonRepository personRepository;
@@ -18,7 +20,9 @@ public class PersonServiceImpl implements PersonService {
         person.setPassword(pw);
         personRepository.save(person);
     }
-
+    public List<Person> getAllPersons() {
+        return personRepository.findAll();
+    }
     public Person getPerson(int id){
         return personRepository.getPersonById(id);
     }

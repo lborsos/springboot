@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+    <person>
+        <id>1</id>
+        <name>Angus</name>
+        <password>ACDC</password>
+    </person>
+    <person>
+        <id>2</id>
+        <name>Borsos</name>
+        <password>12345678</password>
+    </person>
+    <person>
+        <id>3</id>
+        <name>Nandorka</name>
+        <password>2004</password>
+    </person>
+</project>
