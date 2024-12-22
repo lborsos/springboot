@@ -19,18 +19,14 @@ public class MyApplication implements CommandLineRunner { // Fontos: Implementá
 
 	@Override
 	public void run(String... args) throws Exception {
-		// XML fájl elérési út
 		File xmlFile = new File("src/main/resources/data.xml");
 
-		// XML fájl beolvasása
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		Document document = builder.parse(xmlFile);
 
-		// Gyökérelem kiírása
 		System.out.println("Root element: " + document.getDocumentElement().getNodeName());
 
-		// person elemek beolvasása
 		NodeList personNodes = document.getElementsByTagName("person");
 		for (int i = 0; i < personNodes.getLength(); i++) {
 			NodeList childNodes = personNodes.item(i).getChildNodes();

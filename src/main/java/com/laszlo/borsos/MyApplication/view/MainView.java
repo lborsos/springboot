@@ -20,27 +20,21 @@ public class MainView extends VerticalLayout {
 
     @Autowired
     public MainView(PersonServiceImpl personServiceImpl) {
-        // Set up layout
         add(nameField, passwordField, saveButton, personGrid);
 
-        // Save button logic
         saveButton.addClickListener(event -> {
             String name = nameField.getValue();
             String password = passwordField.getValue();
 
-            // Save data via service
             personServiceImpl.createPerson(name, password);
 
-            // Update grid with all data from the database
             List<Person> persons = personServiceImpl.getAllPersons();
             personGrid.setItems(persons);
 
-            // Clear fields
             nameField.clear();
             passwordField.clear();
         });
 
-        // Initial grid population
         personGrid.setColumns("id", "name", "password");
         personGrid.setItems(personServiceImpl.getAllPersons());
     }
